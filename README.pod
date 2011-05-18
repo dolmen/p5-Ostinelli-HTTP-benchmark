@@ -1,0 +1,72 @@
+=head1 NAME
+
+p5-Ostinelli-HTTP-benchmark - Test environment for Perl HTTP servers for Ostinelli's benchmark
+
+=head1 SYNOPSIS
+
+Initial setup:
+
+    git clone https://github.com/dolmen/p5-Ostinelli-HTTP-benchmark.git
+    cd p5-Ostinelli-HTTP-benchmark
+    ./setup.sh
+
+Starting Twiggy on port 8080:
+
+    ./twiggy.sh
+
+Starting Starman on port 8080:
+
+    ./starman.sh
+
+Starting Feersum on port 8080:
+
+    ./feersum.sh
+
+=head1 DESCRIPTION
+
+This project helps to setup an environment for benchmarking of Perl-based HTTP
+servers as Ostinelli proposed on his blog at
+L<http://www.ostinelli.net/a-comparison-between-misultin-mochiweb-cowboy-nodejs-and-tornadoweb/>.
+
+We are providing:
+
+=over 4
+
+=item *
+
+a L<http://search.cpan.org/dist/PSGI/PSGI.pod|PSGI> application following Roberto's specification
+
+=item *
+
+a setup script for easy install of Perl web servers
+
+=item *
+
+scripts for starting those web servers with the PSGI application on port 8080:
+
+=over 4
+
+=item *
+
+Twiggy
+
+=item *
+
+Starman
+
+=item *
+
+Feersum
+
+=back
+
+=back
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright E<copy> Olivier MenguE<eacute>, C<<<dolmen@cpan.org>>>
+
+This project is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
+=cut
+
