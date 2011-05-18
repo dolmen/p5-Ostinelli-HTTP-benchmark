@@ -11,4 +11,4 @@ HTTP::Parser::XS
 Plack
 EOF
 
-exec plackup -s Feersum -E production --port 8080 --pre-fork=32 "$@" ./app.psgi
+exec plackup -s Feersum -E deployment --port 8080 --pre-fork=32 "$@" ./app.psgi

@@ -11,4 +11,4 @@ HTTP::Parser::XS
 Plack
 EOF
 
-exec twiggy --listen :8080 "$@" ./app.psgi
+exec plackup -s Twiggy -E deployment --port 8080 "$@" ./app.psgi

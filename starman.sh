@@ -10,4 +10,4 @@ Starman
 Plack
 EOF
 
-exec starman --port 8080 "$@" ./app.psgi
+exec plackup -s Starman -E deployment --port 8080 --workers=10 "$@" ./app.psgi
