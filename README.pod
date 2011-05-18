@@ -62,6 +62,16 @@ Feersum
 
 =back
 
+=head1 SEE ALSO
+
+=over 4
+
+=item *
+
+The Plack benchmark: L<https://github.com/miyagawa/Plack/blob/master/benchmarks/ab.pl>
+
+=back
+
 =head1 COPYRIGHT & LICENSE
 
 Copyright E<copy> Olivier MenguE<eacute>, C<<<dolmen@cpan.org>>>
